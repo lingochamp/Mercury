@@ -52,7 +52,7 @@ dependencies {
 ```
 //TODO 需要开发者取申请id
 Mercury.instance.initWechatConfig("", "")
-val wechatLoginHelper = WechatLoginHelper(this@MainActivity)
+val wechatLoginHelper = WechatLoginHelper(context)
 wechatLoginHelper.login(object : LoginCallback {
       override fun loginError() {
       }
@@ -70,8 +70,8 @@ wechatLoginHelper.login(object : LoginCallback {
 
 ```
 Mercury.instance.initWeiboConfig("")
-mWeiboLoginHelper = WeiboLoginHelper(this@MainActivity)
-mWeiboLoginHelper!!.login(object : LoginCallback{
+var weiboLoginHelper = WeiboLoginHelper(context)
+weiboLoginHelper!!.login(object : LoginCallback{
     override fun loginError() {
     }
     override fun loginCancel() {
