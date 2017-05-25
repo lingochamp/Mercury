@@ -70,7 +70,7 @@ wechatLoginHelper.login(object : LoginCallback {
 
 ```
 Mercury.instance.initWeiboConfig("")
-var weiboLoginHelper = WeiboLoginHelper(context)
+val weiboLoginHelper = WeiboLoginHelper(context)
 weiboLoginHelper!!.login(object : LoginCallback{
     override fun loginError() {
     }
