@@ -5,6 +5,29 @@
 Mercury是[ShareLoginLib](https://github.com/lingochamp/ShareLoginLib)的Kotlin版本，当前1.0版本只提供登录功能。
 
 
+### Get Started
+
+* Add it in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+ 		repositories {
+ 			...
+ 			maven { url 'https://jitpack.io' }
+ 		}
+ 	}
+```
+
+* Add the dependency
+
+```
+dependencies {
+  	        compile 'com.github.lingochamp:Mercury:1.0.0'
+  	}
+```
+
+
+
 ### Usage
 
 * QQ登录
